@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&family=Tilt+Warp&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+* {
+    text-decoration: none;
+}
+
+nav {
+    background-color: rgb(26, 147, 253);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Tilt Warp', cursive;
+    color: rgb(244, 244, 80);
+}
+#links {
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* display: none; */
+}
+#links li {
+    padding: 10px 10px;
+    font-size: 19px;
+    list-style-type: none;
+    margin: 0 20px;
+    transition: 250ms;
+}
+
+#links li a {
+    color: white;
+}
+
+#links li:hover {
+    transform: scale(1.1);
+    background-color: rgb(94, 94, 187);
+    border-radius: 8px;
+}
+
+#check {
+    display: none;
+}
+
+#menu {
+    font-size: 30px;
+    color: aliceblue;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width:960px) {
+    #links {
+        text-align: center;
+        color: blue;
+        width: fit-content;
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: none;
+        margin: 150px auto;
+    }
+    #links li a{
+        /* display: none; */
+        color: black;
+    }
+    #menu {
+        display: flex;
+    }
+}
