@@ -18,12 +18,12 @@ function adjust () {
 
 window.addEventListener("resize", sizecheck);
 function sizecheck() {
-    if (screen.width > 960) {
+    if (window.innerWidth > 960) {
         links.style.display = "flex";
         check.checked = false;
         menu.innerText = "menu";
     }
-    if (screen.width <= 960 && check.checked == false) {
+    if (window.innerWidth <= 960 && check.checked == false) {
         menu.innerText = "menu";
         links.style.display = "none";
     }
